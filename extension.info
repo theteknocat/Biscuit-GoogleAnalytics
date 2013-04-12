@@ -1,0 +1,4 @@
+name = "GoogleAnalytics"
+description = "Renders Google Analytics code with configuration settings editable via System Admin module."
+version = "2.2"
+is_global = 1

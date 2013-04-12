@@ -7,10 +7,11 @@
  * It will also look for an optional variable called GA_COOKIE_DOMAIN in the system settings so you can explicitly set the cookie domain.
  *
  * @package Extensions
+ * @subpackage GoogleAnalytics
  * @author Peter Epp
  * @copyright Copyright (c) 2009 Peter Epp (http://teknocat.org)
  * @license GNU Lesser General Public License (http://www.gnu.org/licenses/lgpl.html)
- * @version 2.0
+ * @version 2.0 $Id: extension.php 13982 2011-08-08 18:51:55Z teknocat $
  */
 class GoogleAnalytics extends AbstractExtension {
 	/**
