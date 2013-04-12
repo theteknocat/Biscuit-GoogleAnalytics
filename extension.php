@@ -61,7 +61,9 @@ JAVASCRIPT;
 	 * @author Peter Epp
 	 */
 	public static function install_migration() {
-		DB::query("REPLACE INTO `system_settings` (`constant_name`, `friendly_name`, `description`, `value`) VALUES ('GA_TRACKER_ID','Google Analytics tracker ID','',''), ('GA_COOKIE_DOMAIN','Optional cookie domain','Use this when tracker needs to work across sub-domains','')");
+		DB::query("REPLACE INTO `system_settings` (`constant_name`, `friendly_name`, `description`, `value`, `required`, `group_name`) VALUES
+		('GA_TRACKER_ID','Tracker ID','If you leave this blank the tracker will not be loaded.','', 0, 'Google Analytics'),
+		('GA_COOKIE_DOMAIN','Cookie Domain','Use this when tracker needs to work across sub-domains.','', 0, 'Google Analytics')");
 	}
 	/**
 	 * Delete file manager permissions from the system settings table. Works with Biscuit 2.1 only
